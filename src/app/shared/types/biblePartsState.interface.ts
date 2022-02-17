@@ -1,6 +1,6 @@
 import { BiblePartInterface } from 'src/app/home/types/biblePart.interface';
 
-export interface GetBiblePartsStateInterface {
+export interface BiblePartsStateInterface {
   data: BiblePartInterface[];
   error: boolean;
   isLoading: boolean;

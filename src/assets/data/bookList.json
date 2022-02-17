@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "title": "Prva Mojsijeva",
+    "author": "Mojsije",
+    "biblePart": "Zakoni",
+    "slug": "zakoni"
+  },
+  {
+    "id": "2",
+    "title": "Druga Mojsijeva",
+    "author": "Mojsije",
+    "biblePart": "Proroci",
+    "slug": "proroci"
+  }
+]

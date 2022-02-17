@@ -1,5 +1,7 @@
-import { GetBiblePartsStateInterface } from './getBiblePartsState.interface';
+ import { BiblePartsStateInterface } from './BiblePartsState.interface';
+import { BookListStateInterface } from './BookListState.interface';
 
 export interface AppStateInterface {
-  bibleParts: GetBiblePartsStateInterface;
+  bibleParts: BiblePartsStateInterface;
+  bookList: BookListStateInterface;
 }

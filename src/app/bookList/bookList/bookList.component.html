@@ -1,0 +1,19 @@
+<ba-header [title]="slug"></ba-header>
+
+<ba-loading *ngIf="isLoading$ | async"> </ba-loading>
+
+<ba-error-message *ngIf="error$ | async"> </ba-error-message>
+
+<ng-container *ngIf="!(error$ | async)">
+  <div class="container">
+    <a
+      *ngFor="let book of books$ | async"
+      routerLink="{{ book?.id | lowercase }}"
+    >
+      <div class="book-card">
+        <h1 class="title">{{ book?.title }}</h1>
+        <h3 class="subtitle">{{ book?.author }}</h3>
+      </div>
+    </a>
+  </div>
+</ng-container>

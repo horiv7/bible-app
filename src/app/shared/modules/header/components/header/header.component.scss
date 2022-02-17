@@ -1,0 +1,26 @@
+@import "_colors";
+
+.container {
+    background: $background-primary;
+    color: $text-primary;
+    margin: 0;
+    padding: 2em 1em;
+
+    img {
+        position: absolute;
+        top: 2.7em;
+        left: 2em;
+        width: 30px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .title {
+        h1 {
+            margin: 0;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}

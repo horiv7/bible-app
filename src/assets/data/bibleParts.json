@@ -5,7 +5,7 @@
     "img": "./../../../assets/images/zakoni.jpg",
     "biblePart": "Stari zavet",
     "ordinal": 1,
-    "booksIds": [{ "bookId": "1" }, { "bookId": "2" }],
+    "slug": "zakoni",
     "id": "1"
   },
   {
@@ -14,7 +14,7 @@
     "img": "./../../../assets/images/proroci.jpg",
     "biblePart": "Stari zavet",
     "ordinal": 2,
-    "booksIds": [{ "bookId": "1" }, { "bookId": "2" }],
+    "slug": "proroci",
     "id": "2"
   },
   {
@@ -23,7 +23,7 @@
     "img": "./../../../assets/images/spisi.jpg",
     "biblePart": "Stari zavet",
     "ordinal": 3,
-    "booksIds": [{ "bookId": "1" }, { "bookId": "2" }],
+    "slug": "spisi",
     "id": "3"
   },
   {
@@ -32,7 +32,7 @@
     "img": "./../../../assets/images/jevandjelja.jpg",
     "biblePart": "Novi zavet",
     "ordinal": 1,
-    "booksIds": [{ "bookId": "1" }, { "bookId": "2" }],
+    "slug": "jevandjelja",
     "id": "4"
   },
   {
@@ -41,7 +41,7 @@
     "img": "./../../../assets/images/poslanice.jpg",
     "biblePart": "Novi zavet",
     "ordinal": 2,
-    "booksIds": [{ "bookId": "1" }, { "bookId": "2" }],
+    "slug": "poslanice",
     "id": "5"
   },
   {
@@ -50,7 +50,7 @@
     "img": "./../../../assets/images/otkrovenje.jpg",
     "biblePart": "Novi zavet",
     "ordinal": 3,
-    "booksIds": [{ "bookId": "1" }, { "bookId": "2" }],
+    "slug": "otkrovenje",
     "id": "6"
   }
 ]
