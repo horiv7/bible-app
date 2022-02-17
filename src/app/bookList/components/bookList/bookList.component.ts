@@ -4,14 +4,14 @@ import { select, Store } from '@ngrx/store';
 import { map, Observable } from 'rxjs';
 
 import { AppStateInterface } from 'src/app/shared/types/appState.interface';
-import { getBookListAction } from '../store/actions/getBookList.action';
+import { getBookListAction } from '../../store/actions/getBookList.action';
 
 import {
   bookListSelector,
   errorSelector,
   isLoadingSelector,
-} from '../store/selectors';
-import { BookCardInterface } from '../types/bookCard.Interface';
+} from '../../store/selectors';
+import { BookCardInterface } from '../../types/bookCard.Interface';
 
 @Component({
   selector: 'ba-book-list',

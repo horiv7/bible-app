@@ -7,9 +7,10 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { ErrorMessageModule } from '../shared/modules/errorMessage/errorMessage..module';
 import { LoadingModule } from '../shared/modules/loading/loading.module';
+import { BiblePartCardComponent } from './components/biblePartCard/biblePartCard.component';
+import { HomeComponent } from './components/home/home.component';
 
-import { BiblePartCardComponent } from './biblePartCard/biblePartCard.component';
-import { HomeComponent } from './home/home.component';
+ 
 import { GetBiblePartsService } from './services/getBibleParts.service';
 import { GetBiblePartsEffect } from './store/effects/getBibleParts.effect';
 import { reducers } from './store/reducer';

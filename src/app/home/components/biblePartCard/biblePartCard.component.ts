@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { BiblePartInterface } from '../types/biblePart.interface';
+import { BiblePartInterface } from '../../types/biblePart.interface';
 
 @Component({
   selector: 'bi-bible-part-card',

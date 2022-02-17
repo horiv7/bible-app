@@ -1,0 +1,11 @@
+<ba-header [title]="bookIdParam"></ba-header>
+<ba-loading *ngIf="isLoading$ | async"> </ba-loading>
+
+<ba-error-message *ngIf="error$ | async"> </ba-error-message>
+
+<ng-container *ngIf="chapter$ | async as chapter">
+  <div *ngFor="let verse of chapter?.verses" class="poet-card" fxLayout="row">
+    <h2 class="number">{{ verse.number }}</h2>
+    <p class="poet">{{ verse.verse }}</p>
+  </div></ng-container
+>

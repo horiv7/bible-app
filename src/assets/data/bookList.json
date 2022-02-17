@@ -4,13 +4,27 @@
     "title": "Prva Mojsijeva",
     "author": "Mojsije",
     "biblePart": "Zakoni",
-    "slug": "zakoni"
+    "slug": "prva-mojsijeva"
   },
   {
     "id": "2",
     "title": "Druga Mojsijeva",
     "author": "Mojsije",
+    "biblePart": "Zakoni",
+    "slug": "druga-mojsijeva"
+  },
+  {
+    "id": "3",
+    "title": "Isus Navin",
+    "author": "Isus Navin",
     "biblePart": "Proroci",
-    "slug": "proroci"
+    "slug": "isusa-navina"
+  },
+  {
+    "id": "4",
+    "title": "Isajija",
+    "author": "Mojsije",
+    "biblePart": "Proroci",
+    "slug": "isajija"
   }
 ]
