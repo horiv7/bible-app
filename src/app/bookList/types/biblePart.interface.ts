@@ -5,5 +5,5 @@ export interface BiblePartInterface {
   img: string;
   biblePart: string;
   ordinal: number;
-  slug: string;
+  booksIds: { bookId: string }[];
 }

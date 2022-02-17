@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { BiblePartInterface } from '../types/biblePart.interface';
 
 @Component({
   selector: 'bi-bible-part-card',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./biblePartCard.component.scss'],
 })
 export class BiblePartCardComponent {
-  @Input() biblePart: any| undefined;
+  @Input() biblePart!: BiblePartInterface;
 }

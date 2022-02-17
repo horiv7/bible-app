@@ -10,14 +10,16 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 import { routerReducer, StoreRouterConnectingModule } from '@ngrx/router-store';
+import { BookListModule } from './bookList/bookList.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     HomeModule,
+    BookListModule,
     AppRoutingModule,
-    StoreModule.forRoot(  {}),
+    StoreModule.forRoot({}),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
