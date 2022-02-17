@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:hover, a:visited, a:link, a:active {
+
+    text-decoration: none!important;
+
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}

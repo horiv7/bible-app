@@ -1,0 +1,25 @@
+@import "colors";
+
+.title{
+    background: $background-primary;
+    color: #ffffff;
+    margin: 0;
+    padding: 1em;
+    h1{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+.subtitle{
+    background: #BF7F624a;
+    color: #D4956C;
+    margin: 0 0 1% 0;
+    padding: 0.6em;
+    h2{
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+      
+    }
+}
