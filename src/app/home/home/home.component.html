@@ -1,0 +1,39 @@
+<div class="title">
+  <h1>SVETO PISMO</h1>
+</div>
+<ba-loading *ngIf="isLoading$ | async"> </ba-loading>
+
+<ba-error-message *ngIf="error$ | async"> </ba-error-message>
+<ng-container *ngIf="!(error$ | async)">
+  <div class="subtitle">
+    <h2>STARI ZAVET</h2>
+  </div>
+  <div
+    *ngIf="oldTestimonyParts$ | async"
+    class="list"
+    fxLayout="row wrap"
+    fxLayoutAlign="space-between"
+    fxLayoutGap="row wrap 4%"
+  >
+    <bi-bible-part-card
+      fxFlex="49"
+      *ngFor="let biblePart of oldTestimonyParts$ | async"
+      [biblePart]="biblePart"
+    ></bi-bible-part-card>
+  </div>
+  <div class="subtitle">
+    <h2>NOVI ZAVET</h2>
+  </div>
+  <div
+    class="list"
+    fxLayout="row wrap"
+    fxLayoutAlign="space-between"
+    fxLayoutGap="row wrap 4%"
+  >
+    <bi-bible-part-card
+      fxFlex="49"
+      *ngFor="let biblePart of newTestimonyParts$ | async"
+      [biblePart]="biblePart"
+    ></bi-bible-part-card>
+  </div>
+</ng-container>

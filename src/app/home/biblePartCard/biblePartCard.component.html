@@ -1,0 +1,11 @@
+<a routerLink="/{{biblePart?.title | lowercase}}">
+    <div class="card">
+        <img [src]='biblePart?.img' alt="image">
+        <div class="strip">
+            <div class="text">
+                <h3>{{biblePart?.title}}</h3>
+                <h4>{{biblePart?.description}}</h4>
+            </div>
+        </div>
+    </div>
+</a>
