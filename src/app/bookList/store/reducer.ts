@@ -1,6 +1,7 @@
+import { routerNavigationAction } from '@ngrx/router-store';
 import { Action, createReducer, on } from '@ngrx/store';
 
-import { BookListStateInterface } from 'src/app/shared/types/BookListState.interface';
+import { BookListStateInterface } from 'src/app/shared/types/bookListState.interface';
 import {
   getBookListAction,
   getBookListFailureAction,
@@ -37,7 +38,8 @@ const getBookListReducer = createReducer(
       isLoading: false,
       error: true,
     })
-  )
+  ),
+  on(routerNavigationAction, (): BookListStateInterface => initialState)
 );
 export function reducers(state: BookListStateInterface, action: Action) {
   return getBookListReducer(state, action);

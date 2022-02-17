@@ -1,7 +1,11 @@
- import { BiblePartsStateInterface } from './BiblePartsState.interface';
-import { BookListStateInterface } from './BookListState.interface';
+import { BiblePartsStateInterface } from './biblePartsState.interface';
+import { BookListStateInterface } from './bookListState.interface';
+import { BookStateInterface } from './bookState.interface';
+import { ChapterStateInterface } from './chapterState.interface';
 
 export interface AppStateInterface {
   bibleParts: BiblePartsStateInterface;
   bookList: BookListStateInterface;
+  book: BookStateInterface;
+  chapter: ChapterStateInterface;
 }

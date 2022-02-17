@@ -9,15 +9,16 @@ import { StoreModule } from '@ngrx/store';
 import { ErrorMessageModule } from '../shared/modules/errorMessage/errorMessage..module';
 import { HeaderModule } from '../shared/modules/header/header..module';
 import { LoadingModule } from '../shared/modules/loading/loading.module';
-import { BookListComponent } from './components/bookList/bookList.component';
-import { GetBookListService } from './services/getBookList.service';
-import { GetBookListEffect } from './store/effects/getBookList.effect';
+import { BookComponent } from './components/book/book.component';
+ import { GetBookService } from './services/getBook.service';
+import { GetBookEffect } from './store/effects/getBook.effect';
+
 import { reducers } from './store/reducer';
 
 const routes = [
   {
-    path: ':part',
-    component: BookListComponent,
+    path: ':part/:book',
+    component: BookComponent,
   },
 ];
 
@@ -26,15 +27,15 @@ const routes = [
     CommonModule,
     RouterModule.forChild(routes),
     HttpClientModule,
-    EffectsModule.forFeature([GetBookListEffect]),
-    StoreModule.forFeature('bookList', reducers),
+    EffectsModule.forFeature([GetBookEffect]),
+    StoreModule.forFeature('book', reducers),
     FlexLayoutModule,
     LoadingModule,
     ErrorMessageModule,
     HeaderModule,
   ],
-  declarations: [BookListComponent],
+  declarations: [BookComponent],
   exports: [],
-  providers: [GetBookListService],
+  providers: [GetBookService],
 })
-export class BookListModule {}
+export class BookModule {}

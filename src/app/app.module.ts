@@ -11,6 +11,8 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 import { routerReducer, StoreRouterConnectingModule } from '@ngrx/router-store';
 import { BookListModule } from './bookList/bookList.module';
+import { BookModule } from './book/book.module';
+import { ChapterModule } from './chapter/chapter.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +20,8 @@ import { BookListModule } from './bookList/bookList.module';
     BrowserModule,
     HomeModule,
     BookListModule,
+    BookModule,
+    ChapterModule,
     AppRoutingModule,
     StoreModule.forRoot({}),
     ServiceWorkerModule.register('ngsw-worker.js', {

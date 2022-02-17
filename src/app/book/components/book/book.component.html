@@ -1,0 +1,32 @@
+<ba-header [title]="params"></ba-header>
+<ba-loading *ngIf="isLoading$ | async"> </ba-loading>
+
+<ba-error-message *ngIf="error$ | async"> </ba-error-message>
+
+<ng-container *ngIf="book$ | async as book">
+  <div class="desc">
+    <h3 class="title">{{ book.title }}</h3>
+    <p>Zapisao: {{ book.author }}</p>
+    <p>Mesto pisanja: {{ book.placeOfWriting }}</p>
+    <p>Vreme pisanja: {{ book.writingCompleted }}</p>
+    <p>Obuhvata period: {{ book.coverPeriod }}</p>
+  </div>
+  <div
+    class="chapter-list"
+    fxLayout="row wrap"
+    fxLayoutGap="5px"
+    fxLayoutAlign="flex-start"
+  >
+    <div
+      *ngFor="let chapter of book.chapters"
+      class="chapter-card"
+      fxFlex="0 1 calc(33.3% - 20px)"
+    >
+      <a c [routerLink]="[chapter.id]" [queryParams]="{ id: book.id }">
+        <div class="content" fxLayoutAlign="center center">
+          <h1 class="title">{{ chapter.id }}</h1>
+         </div>
+      </a>
+    </div>
+  </div>
+</ng-container>

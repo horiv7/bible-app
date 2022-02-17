@@ -3,14 +3,14 @@ import { select, Store } from '@ngrx/store';
 import { map, Observable } from 'rxjs';
 
 import { AppStateInterface } from 'src/app/shared/types/appState.interface';
-import { getBiblePartsAction } from '../store/actions/getBibleParts.action';
+import { getBiblePartsAction } from '../../store/actions/getBibleParts.action';
 
 import {
   biblePartsSelector,
   errorSelector,
   isLoadingSelector,
-} from '../store/selectors';
-import { BiblePartInterface } from '../types/biblePart.interface';
+} from '../../store/selectors';
+import { BiblePartInterface } from '../../types/biblePart.interface';
 
 @Component({
   selector: 'ba-home',
@@ -35,11 +35,15 @@ export class HomeComponent implements OnInit {
     this.isLoading$ = this.store.pipe(select(isLoadingSelector));
     this.oldTestimonyParts$ = this.store.pipe(
       select(biblePartsSelector),
-      map((el) => el.filter((item) => item.biblePart === 'Stari zavet'))
+      map((el: BiblePartInterface[]) =>
+        el.filter((item) => item.biblePart === 'Stari zavet')
+      )
     );
     this.newTestimonyParts$ = this.store.pipe(
       select(biblePartsSelector),
-      map((el) => el.filter((item) => item.biblePart === 'Novi zavet'))
+      map((el: BiblePartInterface[]) =>
+        el.filter((item) => item.biblePart === 'Novi zavet')
+      )
     );
   }
 
