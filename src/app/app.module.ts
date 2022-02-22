@@ -13,6 +13,7 @@ import { routerReducer, StoreRouterConnectingModule } from '@ngrx/router-store';
 import { BookListModule } from './bookList/bookList.module';
 import { BookModule } from './book/book.module';
 import { ChapterModule } from './chapter/chapter.module';
+import { HeaderModule } from './shared/modules/header/header..module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +24,7 @@ import { ChapterModule } from './chapter/chapter.module';
     BookModule,
     ChapterModule,
     AppRoutingModule,
+    HeaderModule,
     StoreModule.forRoot({}),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,

@@ -1,6 +1,11 @@
-<ba-header [title]="params"></ba-header>
-<ba-loading *ngIf="isLoading$ | async"> </ba-loading>
+<ng-container *ngIf="book$ | async as book; else static">
+  <ba-header [title]="book.title"></ba-header>
+</ng-container>
+<ng-template #static>
+  <ba-header [title]="params"></ba-header>
+</ng-template>
 
+<ba-loading *ngIf="isLoading$ | async"> </ba-loading>
 <ba-error-message *ngIf="error$ | async"> </ba-error-message>
 
 <ng-container *ngIf="book$ | async as book">
@@ -25,7 +30,7 @@
       <a c [routerLink]="[chapter.id]" [queryParams]="{ id: book.id }">
         <div class="content" fxLayoutAlign="center center">
           <h1 class="title">{{ chapter.id }}</h1>
-         </div>
+        </div>
       </a>
     </div>
   </div>

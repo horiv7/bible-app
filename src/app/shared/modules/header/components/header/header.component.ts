@@ -1,6 +1,9 @@
 import { Location } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
+import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
+import { TitleType } from 'src/app/shared/types/title.type';
+import { titleSelector } from '../../store/selectors';
 
 @Component({
   selector: 'ba-header',
@@ -9,11 +12,12 @@ import { Observable } from 'rxjs';
 })
 export class HeaderComponent implements OnInit {
   @Input('title') titleProps!: string | '';
+  title$!: Observable<TitleType>;
 
-  constructor(private location: Location) {}
+  constructor(private location: Location, private store: Store) {}
 
   ngOnInit(): void {
-    //this.title$ = this.bookService.getTitle()
+    this.title$ = this.store.pipe(select(titleSelector));
   }
 
   back() {

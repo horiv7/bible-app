@@ -37,7 +37,6 @@ export class BookComponent implements OnInit {
 
   initialValues(): void {
     this.params = this.route.snapshot.queryParamMap.get('id') || '';
-    //TO DO TITLE
     this.book$ = this.store.pipe(select(bookSelector));
     this.error$ = this.store.pipe(select(errorSelector));
     this.isLoading$ = this.store.pipe(select(isLoadingSelector));
