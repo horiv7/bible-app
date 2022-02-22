@@ -8,5 +8,5 @@ export interface BookInterface {
     coverPeriod: string;
     author:string;
     chapters: ChapterInterface[];
-    booksGroup:string;
+    biblePart:string;
 }

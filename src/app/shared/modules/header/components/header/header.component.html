@@ -5,7 +5,12 @@
     srcset=""
     (click)="back()"
   />
-  <div *ngIf="titleProps as title" class="title">
-    <h1>{{ title | titlecase }}</h1>
+  <div *ngIf="title$ | async as title; else title" class="title">
+    <h1>{{ title }}</h1>
   </div>
+  <ng-template #title>
+    <div *ngIf="titleProps as title" class="title">
+      <h1>{{ title | titlecase }}</h1>
+    </div></ng-template
+  >
 </div>
