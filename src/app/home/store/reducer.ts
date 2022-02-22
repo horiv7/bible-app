@@ -1,6 +1,6 @@
 import { Action, createReducer, on } from '@ngrx/store';
 
-import { BiblePartsStateInterface } from 'src/app/shared/types/biblePartsState.interface';
+import { BiblePartsStateInterface } from 'src/app/home/types/biblePartsState.interface';
 import {
   getBiblePartsAction,
   getBiblePartsFailureAction,

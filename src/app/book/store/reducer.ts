@@ -1,6 +1,6 @@
 import { routerNavigationAction } from '@ngrx/router-store';
 import { Action, createReducer, on } from '@ngrx/store';
-import { BookStateInterface } from 'src/app/shared/types/bookState.interface';
+import { BookStateInterface } from 'src/app/book/types/bookState.interface';
 
 import {
   getBookAction,

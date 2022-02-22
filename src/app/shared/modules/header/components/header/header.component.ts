@@ -2,7 +2,8 @@ import { Location } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { TitleType } from 'src/app/shared/types/title.type';
+
+import { TitleType } from 'src/app/shared/modules/header/types/title.type';
 import { titleSelector } from '../../store/selectors';
 
 @Component({

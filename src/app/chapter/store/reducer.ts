@@ -1,6 +1,6 @@
 import { routerNavigationAction } from '@ngrx/router-store';
 import { Action, createReducer, on } from '@ngrx/store';
-import { ChapterStateInterface } from 'src/app/shared/types/chapterState.interface';
+import { ChapterStateInterface } from 'src/app/chapter/types/chapterState.interface';
 
 import {
   getChapterAction,

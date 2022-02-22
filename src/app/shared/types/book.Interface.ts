@@ -1,4 +1,4 @@
-import { ChapterInterface } from "./chapter.Interface";
+import { ChapterInterface } from "../../chapter/types/chapter.Interface";
 
 export interface BookInterface {
     id: string;

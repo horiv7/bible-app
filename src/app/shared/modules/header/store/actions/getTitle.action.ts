@@ -1,6 +1,6 @@
 import { createAction, props } from '@ngrx/store';
-import { TitleType } from 'src/app/shared/types/title.type';
 
+import { TitleType } from 'src/app/shared/modules/header/types/title.type';
 import { ActionTypes } from '../actionTypes';
 
 export const getTitleAction = createAction(

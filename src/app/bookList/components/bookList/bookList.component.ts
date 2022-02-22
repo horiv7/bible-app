@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { select, Store } from '@ngrx/store';
-import { map, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 
 import { AppStateInterface } from 'src/app/shared/types/appState.interface';
 import { getBookListAction } from '../../store/actions/getBookList.action';

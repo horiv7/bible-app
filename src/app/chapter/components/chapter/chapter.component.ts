@@ -4,7 +4,7 @@ import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
 import { AppStateInterface } from 'src/app/shared/types/appState.interface';
-import { ChapterInterface } from 'src/app/shared/types/chapter.Interface';
+import { ChapterInterface } from 'src/app/chapter/types/chapter.Interface';
 import { getChapterAction } from '../../store/actions/getChapter.action';
 
 import {
