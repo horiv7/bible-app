@@ -1,7 +1,7 @@
 import { routerNavigationAction } from '@ngrx/router-store';
 import { Action, createReducer, on } from '@ngrx/store';
 
-import { BookListStateInterface } from 'src/app/shared/types/bookListState.interface';
+import { BookListStateInterface } from 'src/app/bookList/types/bookListState.interface';
 import {
   getBookListAction,
   getBookListFailureAction,

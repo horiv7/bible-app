@@ -5,7 +5,7 @@ import { map, Observable, tap } from 'rxjs';
 import { getTitleAction } from 'src/app/shared/modules/header/store/actions/getTitle.action';
 import { BookInterface } from 'src/app/shared/types/book.Interface';
 
-import { ChapterInterface } from 'src/app/shared/types/chapter.Interface';
+import { ChapterInterface } from 'src/app/chapter/types/chapter.Interface';
 import { environment } from 'src/environments/environment';
 
 @Injectable()

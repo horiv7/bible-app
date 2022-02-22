@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { catchError, map, of, switchMap } from 'rxjs';
-import { ChapterInterface } from 'src/app/shared/types/chapter.Interface';
+import { ChapterInterface } from 'src/app/chapter/types/chapter.Interface';
 
 import { GetChapterService } from '../../services/getChapter.service';
 

@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { ChapterInterface } from 'src/app/shared/types/chapter.Interface';
+import { ChapterInterface } from 'src/app/chapter/types/chapter.Interface';
 
 import { ActionTypes } from '../actionTypes';
 

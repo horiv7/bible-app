@@ -1,7 +1,7 @@
 import { createSelector } from '@ngrx/store';
 
 import { AppStateInterface } from 'src/app/shared/types/appState.interface';
-import { BookStateInterface } from 'src/app/shared/types/bookState.interface';
+import { BookStateInterface } from 'src/app/book/types/bookState.interface';
 
 export const bookFeatureSelector = (state: AppStateInterface) => state.book;
 
