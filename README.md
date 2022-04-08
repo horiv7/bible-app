@@ -15,6 +15,8 @@ I did the design in Figma. Then I took Angular and Ngrx to build the app. I had 
 
 This is a **beta version**. Scripture content isn't available other than a dummy test text.
 <br>
+![App](https://github.com/horiv7/portfolio/blob/main/src/assets/img/bibleApp.png)
+
 <br>
 <br>
 
