@@ -1,22 +1,22 @@
 @import "colors";
 
 .book-card {
-    background: $background-light;
-    color: $text-black;
-    margin: 1em 0.67em;
-    padding: 2em 1em;
-    h1 {
-        margin: 0;
-    }
+  background: $background-light;
+  color: $text-dark-primary;
+  margin: 1em 0;
+  padding: 1.5em 1em;
+  h1 {
+    margin: 0;
+    font-size: 30px;
+    padding-bottom: 0.5em;
+  }
 
-    h3 {
-        margin: 0;
-        font-size: 16px;
-        opacity: 80%;
-    }
+  h3 {
+    margin: 0;
+    font-size: 16px;
+    opacity: 80%;
+  }
 }
-.container{
-   
-    margin-top: 2.5em;
-} 
-
+.container {
+  margin-top: 2em;
+}
