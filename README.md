@@ -14,7 +14,7 @@ I decided to make on my own. The tasks are fast navigation and a nice UI. I chos
 I did the design in Figma. Then I took Angular and Ngrx to build the app. I had no data - the content of The Bible. So I made a script in Python to extract the content and transfer it to JSON.
 
 
-This is a **beta version**. Scripture content isn't available other than a dummy test text.
+This is a **beta version**.
 <br>
 <br>
 ![App](https://github.com/horiv7/portfolio/blob/main/src/assets/img/bibleApp.png)
