@@ -21,3 +21,14 @@ export const errorSelector = createSelector(
   bookFeatureSelector,
   (bookState: BookStateInterface) => bookState.error
 );
+export const chapterSelector = createSelector(
+  bookFeatureSelector,
+  (bookState: BookStateInterface) => {
+    return bookState.chapter;
+  }
+);
+
+export const bookLength = createSelector(
+  bookFeatureSelector,
+  (bookState: BookStateInterface) => bookState.bookLength
+);

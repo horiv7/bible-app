@@ -45,12 +45,12 @@
     "id": "5"
   },
   {
-    "title": "Otkrovenje",
+    "title": "Otkrivenje",
     "description": "Jovanovo otkrovenje ili Apokalipsa",
     "img": "./../../../assets/images/otkrovenje.jpg",
     "biblePart": "Novi zavet",
     "ordinal": 3,
-    "slug": "otkrovenje",
+    "slug": "otkrivenje",
     "id": "6"
   }
 ]

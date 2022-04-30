@@ -1,0 +1,28 @@
+<ba-header [title]="bookIdParam"></ba-header>
+<ba-loading *ngIf="isLoading$ | async"> </ba-loading>
+
+<ba-error-message *ngIf="error$ | async"> </ba-error-message>
+<ng-container *ngIf="chapter$ | async as chapter">
+  <div *ngFor="let verse of chapter?.verses" class="poet-card" fxLayout="row">
+    <h2 class="number">{{ verse.number }}</h2>
+    <p class="poet">{{ verse.verse }}</p>
+  </div>
+  <div class="btns">
+    <button
+      [disabled]="convertString(chapterIdParam) == 1"
+      class="btn"
+      (click)="previous()"
+    >
+      &laquo; Prethodni
+    </button>
+    <a class="btn" (click)="navigateUp()"> &uarr;</a>
+    <button
+      *ngIf="bookLength$ | async as bookLength"
+      class="btn"
+      (click)="next(bookLength)"
+      [disabled]="convertString(chapterIdParam) == bookLength"
+    >
+      Sledeći &raquo;
+    </button>
+  </div></ng-container
+>

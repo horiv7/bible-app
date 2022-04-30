@@ -17,6 +17,7 @@ I did the design in Figma. Then I took Angular and Ngrx to build the app. I had 
 This is a **beta version**.
 <br>
 <br>
+<br>
 ![App](https://github.com/horiv7/portfolio/blob/main/src/assets/img/bibleApp.png)
 
 <br>

@@ -22,7 +22,7 @@ import { HeaderModule } from './shared/modules/header/header..module';
     HomeModule,
     BookListModule,
     BookModule,
-    ChapterModule,
+    //ChapterModule,
     AppRoutingModule,
     HeaderModule,
     StoreModule.forRoot({}),

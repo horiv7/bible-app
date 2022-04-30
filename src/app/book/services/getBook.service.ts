@@ -1,15 +1,21 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, tap } from 'rxjs';
+import { map, Observable, Subject, tap } from 'rxjs';
 
 import { environment } from 'src/environments/environment';
 import { BookInterface } from 'src/app/shared/types/book.Interface';
 import { getTitleAction } from 'src/app/shared/modules/header/store/actions/getTitle.action';
-import { Store } from '@ngrx/store';
+import { select, Store } from '@ngrx/store';
+import { ChapterInterface } from '../types/chapter.Interface';
+import { AppStateInterface } from 'src/app/shared/types/appState.interface';
+import { bookSelector } from '../store/selectors';
 
 @Injectable()
 export class GetBookService {
-  constructor(private http: HttpClient, private store: Store) {}
+  constructor(
+    private http: HttpClient,
+    private store: Store<AppStateInterface>
+  ) {}
 
   getBook(params: string): Observable<BookInterface> {
     const fullUrl = `${environment.apiUrl}${params}.json`;
