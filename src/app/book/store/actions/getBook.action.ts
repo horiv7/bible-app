@@ -1,6 +1,6 @@
 import { createAction, props } from '@ngrx/store';
-import { BookInterface } from 'src/app/shared/types/book.Interface';
 
+import { BookInterface } from 'src/app/shared/types/book.Interface';
 import { ActionTypes } from '../actionTypes';
 
 export const getBookAction = createAction(

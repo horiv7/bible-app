@@ -10,15 +10,29 @@ import { ErrorMessageModule } from '../shared/modules/errorMessage/errorMessage.
 import { HeaderModule } from '../shared/modules/header/header..module';
 import { LoadingModule } from '../shared/modules/loading/loading.module';
 import { BookComponent } from './components/book/book.component';
- import { GetBookService } from './services/getBook.service';
+import { BookContainerComponent } from './components/bookContainer/bookContainer.component';
+import { ChapterComponent } from './components/chapter/chapter.component';
+import { GetBookService } from './services/getBook.service';
+import { GetChapterService } from './services/getChapter.service';
 import { GetBookEffect } from './store/effects/getBook.effect';
+import { GetChapterEffect } from './store/effects/getChapter.effect';
 
 import { reducers } from './store/reducer';
 
 const routes = [
   {
     path: ':part/:book',
-    component: BookComponent,
+    component: BookContainerComponent,
+    children: [
+      {
+        path: '',
+        component: BookComponent,
+      },
+      {
+        path: ':chapterId',
+        component: ChapterComponent,
+      },
+    ],
   },
 ];
 
@@ -27,15 +41,15 @@ const routes = [
     CommonModule,
     RouterModule.forChild(routes),
     HttpClientModule,
-    EffectsModule.forFeature([GetBookEffect]),
+    EffectsModule.forFeature([GetBookEffect,GetChapterEffect]),
     StoreModule.forFeature('book', reducers),
     FlexLayoutModule,
     LoadingModule,
     ErrorMessageModule,
     HeaderModule,
   ],
-  declarations: [BookComponent],
+  declarations: [BookComponent, BookContainerComponent,ChapterComponent],
   exports: [],
-  providers: [GetBookService],
+  providers: [GetBookService, GetChapterService],
 })
 export class BookModule {}

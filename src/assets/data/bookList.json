@@ -1,30 +1,661 @@
 [
   {
-    "id": "1",
-    "title": "Prva Mojsijeva",
+    "id": "01",
+    "title": "1. Mojsijeva",
     "author": "Mojsije",
+    "placeOfWriting": "Pustinja",
+    "writingCompleted": "oko 1513.god pre n.e",
+    "coverPeriod": "Stvaranje - 1657. pre n.e.",
     "biblePart": "Zakoni",
     "slug": "prva-mojsijeva"
   },
   {
-    "id": "2",
-    "title": "Druga Mojsijeva",
+    "id": "02",
+    "title": "2. Mojsijeva",
     "author": "Mojsije",
+    "placeOfWriting": "Pustinja",
+    "writingCompleted": "oko 1512.god pre n.e",
+    "coverPeriod": "1657 - 1512. pre n.e.",
     "biblePart": "Zakoni",
     "slug": "druga-mojsijeva"
   },
   {
-    "id": "3",
-    "title": "Isus Navin",
-    "author": "Isus Navin",
-    "biblePart": "Proroci",
-    "slug": "isusa-navina"
+    "id": "03",
+    "title": "3. Mojsijeva",
+    "author": "Mojsije",
+    "placeOfWriting": "Pustinja",
+    "writingCompleted": "oko 1512.god pre n.e",
+    "coverPeriod": "jedan mesec (1512. pre n.e.)",
+    "biblePart": "Zakoni",
+    "slug": "treca-mojsijeva"
   },
   {
-    "id": "4",
-    "title": "Isajija",
+    "id": "04",
+    "title": "4. Mojsijeva",
     "author": "Mojsije",
+    "placeOfWriting": "Pustinja i ravnice Moava",
+    "writingCompleted": "oko 1473.god pre n.e",
+    "coverPeriod": "1512 - 1473. pre n.e.",
+    "biblePart": "Zakoni",
+    "slug": "cetvrta-mojsijeva"
+  },
+  {
+    "id": "05",
+    "title": "5. Mojsijeva",
+    "author": "Mojsije",
+    "placeOfWriting": "Ravnice Moava",
+    "writingCompleted": "oko 1473.god pre n.e",
+    "coverPeriod": " dva meseca (1473. pre n. e.)",
+    "biblePart": "Zakoni",
+    "slug": "peta-mojsijeva"
+  },
+  {
+    "id": "06",
+    "title": "Isus Navin",
+    "author": "Isus Navin",
+    "placeOfWriting": "Hanan",
+    "writingCompleted": "oko 1450.god pre n.e",
+    "coverPeriod": "1473 - 1450. pre n.e.",
     "biblePart": "Proroci",
-    "slug": "isajija"
+    "slug": "isus navin"
+  },
+  {
+    "id": "07",
+    "title": "Sudije",
+    "author": "Samuilo",
+    "placeOfWriting": "Izrael",
+    "writingCompleted": "oko 1100.god pre n.e",
+    "coverPeriod": " 1450 - 1120. pre n.e.",
+    "biblePart": "Proroci",
+    "slug": "sudije"
+  },
+  {
+    "id": "08",
+    "title": "1. Samuilova",
+    "author": "Samuilo",
+    "placeOfWriting": "Izrael",
+    "writingCompleted": "oko 1078.god pre n.e",
+    "coverPeriod": "1080 - 1078. pre n.e.",
+    "biblePart": "Proroci",
+    "slug": "prva-samuilova"
+  },
+  {
+    "id": "09",
+    "title": "2. Samuilova",
+    "author": "Gad i Natan",
+    "placeOfWriting": "Izrael",
+    "writingCompleted": "oko 1040.god pre n.e",
+    "coverPeriod": "1077 - 1040. pre n.e.",
+    "biblePart": "Proroci",
+    "slug": "druga-samuilova"
+  },
+  {
+    "id": "10",
+    "title": "1. Carevima",
+    "author": "Jeremija",
+    "placeOfWriting": "Jerusalim i Juda",
+    "writingCompleted": "oko 580.god pre n.e",
+    "coverPeriod": " 1040 - 911. pre n.e.",
+    "biblePart": "Proroci",
+    "slug": "prva-carevima"
+  },
+  {
+    "id": "11",
+    "title": "2. Carevima",
+    "author": "Jeremija",
+    "placeOfWriting": "Jerusalim i Egipat",
+    "writingCompleted": "oko 580.god pre n.e",
+    "coverPeriod": "920 - 580. pre n.e.",
+    "biblePart": "Proroci",
+    "slug": "druga-carevima"
+  },
+  {
+    "id": "12",
+    "title": "Isaija",
+    "author": "Isaija",
+    "placeOfWriting": "Jerusalim",
+    "writingCompleted": "nakon 732.god pre n.e",
+    "coverPeriod": "778 - 732. pre n.e.",
+    "biblePart": "Proroci",
+    "slug": "isaija"
+  },
+  {
+    "id": "13",
+    "title": "Jeremija",
+    "author": "Jeremija",
+    "placeOfWriting": "Juda i Egipat",
+    "writingCompleted": "oko 580.god pre n.e",
+    "coverPeriod": " 647 - 580. pre n.e.",
+    "biblePart": "Proroci",
+    "slug": "jeremija"
+  },
+  {
+    "id": "14",
+    "title": "Jezekilj",
+    "author": "Jezekilj",
+    "placeOfWriting": "Vavilon",
+    "writingCompleted": "oko 1656.god pre n.e",
+    "coverPeriod": "1040 - 911. pre n.e.",
+    "biblePart": "Proroci",
+    "slug": "jezekilj"
+  },
+  {
+    "id": "15",
+    "title": "Osija",
+    "author": "Osija",
+    "placeOfWriting": "Samarija",
+    "writingCompleted": "nakon 745.god pre n.e",
+    "coverPeriod": "804 - 745. pre n.e.",
+    "biblePart": "Proroci",
+    "slug": "osija"
+  },
+  {
+    "id": "16",
+    "title": "Joil",
+    "author": "Joil",
+    "placeOfWriting": "Juda",
+    "writingCompleted": "oko 591.god pre n.e",
+    "coverPeriod": " 613 - 591. pre n. e.",
+    "biblePart": "Proroci",
+    "slug": "joil"
+  },
+  {
+    "id": "17",
+    "title": "Amos",
+    "author": "Amos",
+    "placeOfWriting": "Juda",
+    "writingCompleted": "oko 804.god pre n.e",
+    "coverPeriod": "",
+    "biblePart": "Proroci",
+    "slug": "amos"
+  },
+  {
+    "id": "18",
+    "title": "Avdija",
+    "author": "Avdija",
+    "placeOfWriting": "",
+    "writingCompleted": "oko 607.god pre n.e",
+    "coverPeriod": "",
+    "biblePart": "Proroci",
+    "slug": "avdija"
+  },
+  {
+    "id": "19",
+    "title": "Jona",
+    "author": "Jona",
+    "placeOfWriting": "",
+    "writingCompleted": "oko 844.god pre n.e",
+    "coverPeriod": "",
+    "biblePart": "Proroci",
+    "slug": "jona"
+  },
+  {
+    "id": "20",
+    "title": "Mihej",
+    "author": "Mihej",
+    "placeOfWriting": "Juda",
+    "writingCompleted": "oko 717.god pre n.e",
+    "coverPeriod": "777 - 717. pre n.e.",
+    "biblePart": "Proroci",
+    "slug": "mihej"
+  },
+  {
+    "id": "21",
+    "title": "Naum",
+    "author": "Naum",
+    "placeOfWriting": "Juda",
+    "writingCompleted": "oko 632.god pre n.e",
+    "coverPeriod": "",
+    "biblePart": "Proroci",
+    "slug": "naum"
+  },
+  {
+    "id": "22",
+    "title": "Avakum",
+    "author": "Avakum",
+    "placeOfWriting": "Juda",
+    "writingCompleted": "oko 628.god pre n.e",
+    "coverPeriod": "",
+    "biblePart": "Proroci",
+    "slug": "avakum"
+  },
+  {
+    "id": "23",
+    "title": "Sofonija",
+    "author": "Sofonija",
+    "placeOfWriting": "Juda",
+    "writingCompleted": "oko 648.god pre n.e",
+    "coverPeriod": "",
+    "biblePart": "Proroci",
+    "slug": "sofonija"
+  },
+  {
+    "id": "24",
+    "title": "Agej",
+    "author": "Agej",
+    "placeOfWriting": "Jerusalim",
+    "writingCompleted": "oko 520.god pre n.e",
+    "coverPeriod": "112 dana (520. pre n. e.)",
+    "biblePart": "Proroci",
+    "slug": "agej"
+  },
+  {
+    "id": "25",
+    "title": "Zaharija",
+    "author": "Zaharija",
+    "placeOfWriting": "Jerusalim",
+    "writingCompleted": "518.god pre n.e",
+    "coverPeriod": "520 - 518. pre n.e.",
+    "biblePart": "Proroci",
+    "slug": "zaharija"
+  },
+  {
+    "id": "26",
+    "title": "Malahija",
+    "author": "Malahija",
+    "placeOfWriting": "Jerusalim",
+    "writingCompleted": "oko 443.god pre n.e",
+    "coverPeriod": "",
+    "biblePart": "Proroci",
+    "slug": "malahija"
+  },
+  {
+    "id": "27",
+    "title": "Psalmi",
+    "author": "David i drugi",
+    "placeOfWriting": "",
+    "writingCompleted": "oko 460.god pre n.e",
+    "coverPeriod": "",
+    "biblePart": "Spisi",
+    "slug": "psalmi"
+  },
+  {
+    "id": "28",
+    "title": "Priče",
+    "author": "Solomon, Agur, Lemuel",
+    "placeOfWriting": "Jerusalim",
+    "writingCompleted": "oko 717.god pre n.e",
+    "coverPeriod": "",
+    "biblePart": "Spisi",
+    "slug": "price"
+  },
+  {
+    "id": "29",
+    "title": "Jov",
+    "author": "Mojsije",
+    "placeOfWriting": "Pustinja",
+    "writingCompleted": "oko 1473.god pre n.e",
+    "coverPeriod": "1657 - 1473. pre n.e.",
+    "biblePart": "Spisi",
+    "slug": "jov"
+  },
+  {
+    "id": "30",
+    "title": "Pesma nad pesmama",
+    "author": "Solomon",
+    "placeOfWriting": "Jerusalim",
+    "writingCompleted": "oko 1020.god pre n.e",
+    "coverPeriod": "",
+    "biblePart": "Spisi",
+    "slug": "pesma-nad-pesmama"
+  },
+  {
+    "id": "31",
+    "title": "Ruta",
+    "author": "Samuilo",
+    "placeOfWriting": "Izrael",
+    "writingCompleted": "oko 1090.god pre n.e",
+    "coverPeriod": "11 godina vladavine sudija",
+    "biblePart": "Spisi",
+    "slug": "ruta"
+  },
+  {
+    "id": "32",
+    "title": "Plač",
+    "author": "Jeremija",
+    "placeOfWriting": "okolina Jerusalima",
+    "writingCompleted": "607.god pre n.e",
+    "coverPeriod": "",
+    "biblePart": "Spisi",
+    "slug": "plac"
+  },
+  {
+    "id": "33",
+    "title": "Propovednik",
+    "author": "Solomon",
+    "placeOfWriting": "Jerusalim",
+    "writingCompleted": "pre 1000.god pre n.e",
+    "coverPeriod": "",
+    "biblePart": "Spisi",
+    "slug": "propovednik"
+  },
+  {
+    "id": "34",
+    "title": "Jestira",
+    "author": "Mardohej",
+    "placeOfWriting": "Susam, Elam",
+    "writingCompleted": "oko 475.god pre n.e",
+    "coverPeriod": "493 - 475. pre n.e.",
+    "biblePart": "Spisi",
+    "slug": "jestira"
+  },
+  {
+    "id": "35",
+    "title": "Danilo",
+    "author": "Danilo",
+    "placeOfWriting": "VAVILON",
+    "writingCompleted": "oko 536.god pre n.e",
+    "coverPeriod": "618 - 536. pre n.e.",
+    "biblePart": "Spisi",
+    "slug": "danilo"
+  },
+  {
+    "id": "36",
+    "title": "Jezdra",
+    "author": "Jezdra",
+    "placeOfWriting": "Jerusalim",
+    "writingCompleted": "oko  460.god pre n.e",
+    "coverPeriod": "537 - 467. pre n.e.",
+    "biblePart": "Spisi",
+    "slug": "jezdra"
+  },
+  {
+    "id": "37",
+    "title": "Nemija",
+    "author": "Nemija",
+    "placeOfWriting": "Jerusalim",
+    "writingCompleted": " nakon 443.god pre n.e",
+    "coverPeriod": " 456 - 443. pre n.e.",
+    "biblePart": "Spisi",
+    "slug": "nemija"
+  },
+  {
+    "id": "38",
+    "title": "1. Dnevnika",
+    "author": "Jezdra",
+    "placeOfWriting": "Jerusalim",
+    "writingCompleted": "oko 460.god pre n.e",
+    "coverPeriod": " Stvaranje - 1037. pre n.e.",
+    "biblePart": "Spisi",
+    "slug": "prva-dnevnika"
+  },
+  {
+    "id": "39",
+    "title": "2. Dnevnika",
+    "author": "Jezdra",
+    "placeOfWriting": "Jerusalim",
+    "writingCompleted": "oko 460.god pre n.e",
+    "coverPeriod": "1037 - 537. pre n.e.",
+    "biblePart": "Spisi",
+    "slug": "druga-dnevnika"
+  },
+  {
+    "id": "40",
+    "title": "Matej",
+    "author": "Matej",
+    "placeOfWriting": "Izrael",
+    "writingCompleted": "oko 41. n. e.",
+    "coverPeriod": "2. pre n. e. - 33. n. e.",
+    "biblePart": "Jevandjelja",
+    "slug": "matej"
+  },
+  {
+    "id": "41",
+    "title": "Marko",
+    "author": "Marko",
+    "placeOfWriting": "Rim",
+    "writingCompleted": "oko 60 - 65. n. e.",
+    "coverPeriod": "29 - 33. n. e.",
+    "biblePart": "Jevandjelja",
+    "slug": "marko"
+  },
+  {
+    "id": "42",
+    "title": "Luka",
+    "author": "Luka",
+    "placeOfWriting": "Cezareja",
+    "writingCompleted": "oko 56 - 58. n. e.",
+    "coverPeriod": "3. pre n. e. - 33. n. e.",
+    "biblePart": "Jevandjelja",
+    "slug": "luka"
+  },
+  {
+    "id": "43",
+    "title": "Jovan",
+    "author": "Jovan",
+    "placeOfWriting": "Efes",
+    "writingCompleted": "oko 98. n. e.",
+    "coverPeriod": "29 - 33. n. e.",
+    "biblePart": "Jevandjelja",
+    "slug": "jovan"
+  },
+  {
+    "id": "44",
+    "title": "Dela",
+    "author": "Luka",
+    "placeOfWriting": "",
+    "writingCompleted": "oko 61. n. e.",
+    "coverPeriod": "33 - 61. n. e.",
+    "biblePart": "Poslanice",
+    "slug": "dela"
+  },
+  {
+    "id": "45",
+    "title": "Rimljanima",
+    "author": "Pavle",
+    "placeOfWriting": "Korint",
+    "writingCompleted": "oko 56. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "rimljanima"
+  },
+  {
+    "id": "46",
+    "title": "1. Korincanima",
+    "author": "Pavle",
+    "placeOfWriting": "Efes",
+    "writingCompleted": "oko 55. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "prva-korincanima"
+  },
+  {
+    "id": "47",
+    "title": "2. Korincanima",
+    "author": "Pavle",
+    "placeOfWriting": "Makedonija",
+    "writingCompleted": "oko 55. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "druga-korincanima"
+  },
+  {
+    "id": "48",
+    "title": "Galatima",
+    "author": "Pavle",
+    "placeOfWriting": "Korint",
+    "writingCompleted": "oko 50 - 52. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "galatima"
+  },
+  {
+    "id": "49",
+    "title": "Efescima",
+    "author": "Pavle",
+    "placeOfWriting": "Rim",
+    "writingCompleted": "oko 60 - 61. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "efescima"
+  },
+  {
+    "id": "50",
+    "title": "Filibljanima",
+    "author": "Pavle",
+    "placeOfWriting": "Rim",
+    "writingCompleted": "oko 60 - 61. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "filibljanima"
+  },
+  {
+    "id": "51",
+    "title": "Kolosanima",
+    "author": "Pavle",
+    "placeOfWriting": "Rim",
+    "writingCompleted": "oko 60 - 61. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "kolosanima"
+  },
+  {
+    "id": "52",
+    "title": "1. Solunjanima",
+    "author": "Pavle",
+    "placeOfWriting": "Korint",
+    "writingCompleted": "oko 50. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "prva-solunjanima"
+  },
+  {
+    "id": "52",
+    "title": "Titu",
+    "author": "Pavle",
+    "placeOfWriting": "Makedonija",
+    "writingCompleted": "oko 61 - 64. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "titu"
+  },
+  {
+    "id": "53",
+    "title": "2. Solunjanima",
+    "author": "Pavle",
+    "placeOfWriting": "Korint",
+    "writingCompleted": "oko 51. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "druga-solunjanima"
+  },
+  {
+    "id": "54",
+    "title": "1. Timotiju",
+    "author": "Pavle",
+    "placeOfWriting": "Makedonija",
+    "writingCompleted": "oko 61 - 64. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "prva-timotiju"
+  },
+  {
+    "id": "55",
+    "title": "2. Timotiju",
+    "author": "Pavle",
+    "placeOfWriting": "Rim",
+    "writingCompleted": "oko 41. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "druga-timotiju"
+  },
+  {
+    "id": "57",
+    "title": "Filimonu",
+    "author": "Pavle",
+    "placeOfWriting": "Rim",
+    "writingCompleted": "oko 60 - 61. n. e.",
+    "biblePart": "Poslanice",
+    "slug": "filimonu"
+  },
+  {
+    "id": "58",
+    "title": "Jevrejima",
+    "author": "Pavle",
+    "placeOfWriting": "Rim",
+    "writingCompleted": "oko 61. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "jevrejima"
+  },
+  {
+    "id": "59",
+    "title": "Jakovljeva",
+    "author": "Jakov",
+    "placeOfWriting": "Jerusalim",
+    "writingCompleted": "pre 62. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "jakovljeva"
+  },
+  {
+    "id": "60",
+    "title": "1. Petrova",
+    "author": "Petar",
+    "placeOfWriting": "Vavilon",
+    "writingCompleted": " oko 62 - 64. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "prva-petrova"
+  },
+  {
+    "id": "61",
+    "title": "2. Petrova",
+    "author": "Petar",
+    "placeOfWriting": "Vavilon",
+    "writingCompleted": "oko 64. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "druga-petrova"
+  },
+  {
+    "id": "62",
+    "title": "1. Jovanova",
+    "author": "Jovan",
+    "placeOfWriting": "Efes",
+    "writingCompleted": "oko 98. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "prva-jovanova"
+  },
+  {
+    "id": "63",
+    "title": "2. Jovanova",
+    "author": "Jovana",
+    "placeOfWriting": "Efes",
+    "writingCompleted": "oko 98. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "druga-jovanova"
+  },
+  {
+    "id": "64",
+    "title": "3. Jovanova",
+    "author": "Jovan",
+    "placeOfWriting": "Efes",
+    "writingCompleted": "oko 98. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "treca-jovanova"
+  },
+  {
+    "id": "65",
+    "title": "Judina",
+    "author": "Juda",
+    "placeOfWriting": "Izrael",
+    "writingCompleted": "oko 65. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Poslanice",
+    "slug": "judina"
+  },
+  {
+    "id": "66",
+    "title": "Otkrivenje",
+    "author": "Jovan",
+    "placeOfWriting": "Patmos",
+    "writingCompleted": "oko 96. n. e.",
+    "coverPeriod": "",
+    "biblePart": "Otkrivenje",
+    "slug": "otkrivenje"
   }
 ]
