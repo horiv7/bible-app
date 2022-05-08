@@ -6,8 +6,10 @@
 /out-tsc
 /bazel-out
 
+#Data
 src/assets/data
 /assets/data
+
 #firebase
 /.firebase
 /.firebaserc
