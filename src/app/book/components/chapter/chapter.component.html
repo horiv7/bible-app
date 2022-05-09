@@ -3,9 +3,9 @@
 
 <ba-error-message *ngIf="error$ | async"> </ba-error-message>
 <ng-container *ngIf="chapter$ | async as chapter">
-  <div *ngFor="let verse of chapter?.verses" class="poet-card" fxLayout="row">
+  <div *ngFor="let verse of chapter?.verses" class="verse-card" fxLayout="row">
     <h2 class="number">{{ verse.number }}</h2>
-    <p class="poet">{{ verse.verse }}</p>
+    <p class="verse">{{ verse.verse }}</p>
   </div>
   <div class="btns">
     <button
@@ -13,7 +13,7 @@
       class="btn"
       (click)="previous()"
     >
-      &laquo; Prethodni
+      &laquo; Prethodna
     </button>
     <a class="btn" (click)="navigateUp()"> &uarr;</a>
     <button
@@ -22,7 +22,7 @@
       (click)="next(bookLength)"
       [disabled]="convertString(chapterIdParam) == bookLength"
     >
-      Sledeći &raquo;
+      Sledeća &raquo;
     </button>
   </div></ng-container
 >
