@@ -45,6 +45,4 @@ export class GetChapterService {
     this.chapterIdParam = this.route.snapshot.paramMap.get('chapterId') || '';
     this.bookIdParam = this.route.snapshot.queryParamMap.get('id') || '';
   }
-
-  mapChapter() {}
 }
