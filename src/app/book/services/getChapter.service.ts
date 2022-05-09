@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { select, Store } from '@ngrx/store';
-import { map, Observable, tap } from 'rxjs';
+import { delay, map, Observable, retryWhen, tap } from 'rxjs';
 
 import { getTitleAction } from 'src/app/shared/modules/header/store/actions/getTitle.action';
 import { BookInterface } from 'src/app/shared/types/book.Interface';
 
-import { ChapterInterface } from 'src/app/chapter/types/chapter.Interface';
+import { ChapterInterface } from 'src/app/book/types/chapter.Interface';
 import { bookSelector } from '../store/selectors';
+import { getBookAction } from '../store/actions/getBook.action';
 
 @Injectable()
 export class GetChapterService {
@@ -22,7 +23,15 @@ export class GetChapterService {
       select(bookSelector),
       tap((book) => this.setTitle(book, chapterIdParam)),
       map((book) => book.chapters.filter((ch) => ch.id === chapterIdParam)),
-      map((c) => c[0])
+      map((c) => c[0]),
+      retryWhen((errors) =>
+        errors.pipe(
+          tap(() => {
+            this.store.dispatch(getBookAction({ params: this.bookIdParam }));
+          }),
+          delay(50)
+        )
+      )
     );
   }
 
@@ -36,4 +45,6 @@ export class GetChapterService {
     this.chapterIdParam = this.route.snapshot.paramMap.get('chapterId') || '';
     this.bookIdParam = this.route.snapshot.queryParamMap.get('id') || '';
   }
+
+  mapChapter() {}
 }

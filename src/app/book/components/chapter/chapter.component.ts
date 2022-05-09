@@ -56,8 +56,9 @@ export class ChapterComponent implements OnInit {
         chapterIdParam: this.chapterIdParam,
       })
     );
+    window.scrollTo(0, 0);
   }
-  next(bookLength:number) {
+  next(bookLength: number) {
     let id = this.convertString(this.chapterIdParam) + 1;
     if (id <= 0) return;
     else if (id > bookLength) return;
@@ -88,6 +89,7 @@ export class ChapterComponent implements OnInit {
       relativeTo: this.route,
       queryParams: { id: this.bookIdParam },
     });
+    window.scrollTo(0, 0);
   }
   convertString(value) {
     return parseFloat(value);

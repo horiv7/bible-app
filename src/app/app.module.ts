@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
-import { HomeModule } from './home/home.module';
 import { StoreModule } from '@ngrx/store';
+import { routerReducer, StoreRouterConnectingModule } from '@ngrx/router-store';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
-import { routerReducer, StoreRouterConnectingModule } from '@ngrx/router-store';
+import { AppRoutingModule } from './app-routing.module';
+
+import { environment } from '../environments/environment';
+
+import { AppComponent } from './app.component';
+import { HomeModule } from './home/home.module';
 import { BookListModule } from './bookList/bookList.module';
 import { BookModule } from './book/book.module';
-import { ChapterModule } from './chapter/chapter.module';
 import { HeaderModule } from './shared/modules/header/header..module';
 
 @NgModule({
@@ -22,7 +23,6 @@ import { HeaderModule } from './shared/modules/header/header..module';
     HomeModule,
     BookListModule,
     BookModule,
-    //ChapterModule,
     AppRoutingModule,
     HeaderModule,
     StoreModule.forRoot({}),

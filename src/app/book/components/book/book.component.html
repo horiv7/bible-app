@@ -16,17 +16,8 @@
     <p>Vreme pisanja: {{ book.writingCompleted }}</p>
     <p>Obuhvata period: {{ book.coverPeriod }}</p>
   </div>
-  <div
-    class="chapter-list"
-    fxLayout="row wrap"
-    fxLayoutGap="5px"
-    fxLayoutAlign="flex-start"
-  >
-    <div
-      *ngFor="let chapter of book.chapters"
-      class="chapter-card"
-      fxFlex="0 1 calc(33.3% - 20px)"
-    >
+  <div class="chapter-list">
+    <div *ngFor="let chapter of book.chapters" class="chapter-card">
       <a c [routerLink]="[chapter.id]" [queryParams]="{ id: book.id }">
         <div class="content" fxLayoutAlign="center center">
           <h1 class="title">{{ chapter.id }}</h1>

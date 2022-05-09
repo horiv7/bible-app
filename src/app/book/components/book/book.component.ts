@@ -44,5 +44,6 @@ export class BookComponent implements OnInit {
 
   fetchFeed() {
     this.store.dispatch(getBookAction({ params: this.params }));
+    window.scrollTo(0, 0);
   }
 }
