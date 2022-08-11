@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
 
-**[Live preview](https://bibleapp-fcc5b.web.app/)**:https://bibleapp-fcc5b.web.app/
+**[Live preview](https://bibleapp-fcc5b.web.app/)**:https://bible-app-601da.web.app/
 
 
 I had to do some research on the Scripture for my work. I read in pdf format, but it was slow and difficult to navigate either on a PC or a mobile device. I wanted to move fast and make it mobile. However, the solution I found on Google Store did not satisfy me.
